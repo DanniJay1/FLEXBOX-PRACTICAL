@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>FLEXBOX 3 - JUGAR</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            height: calc(100vh - 8px);
+            gap: 4px;
+        }
+
+        nav, main, aside, footer {
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4px;
+        }
+
+        .navleft {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .navright {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .navredbox4 {
+            background: red;
+            height: 30px;
+            width: 50px;
+        }
+
+        .navbox1 {
+            background: red;
+            height: 35px;
+            width: 35px;
+        }
+
+        .page-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 1;
+            gap: 4px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+            width: 20%;
+        }
+
+        .danbox1 {
+            display: flex;
+            border: 1px solid black;
+            height: 5vh;
+        }
+
+        .danbox3 {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            height: 40%;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 4px;
+            gap: 4px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .danbox2 {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            height: 30%;
+            width: 10%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .footer-row {
+            display: flex;
+            gap: 4px;
+            flex-direction: row;
+        }
+
+        .footerbox5x {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+
+        .footer-text {
+            justify-content: center;
+            padding: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="navbox1"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+
+        <div class="navright">
+            <div class="navredbox4"></div>
+            <div class="navredbox4"></div>
+            <div class="navredbox4"></div>
+            <div class="navredbox4"></div>
+            
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <aside class="sidebar">
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+            <div class="danbox1"></div>
+
+
+            
+        </aside>
+        
+        <main>
+            <div class="danbox2"></div>
+            <div class="danbox2"></div>
+            <div class="danbox2"></div>
+            <div class="danbox2"></div>
+            <div class="danbox2"></div>
+            <div class="danbox2"></div>
+           
+        </main>
+
+        <aside class="sidebar">
+            <div class="danbox3"></div>
+            <div class="danbox3"></div>
+            <div class="danbox3"></div>
+            
+            
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footerbox5x"></div>
+            <div class="footerbox5x"></div>
+            <div class="footerbox5x"></div>
+            <div class="footerbox5x"></div>
+            <div class="footerbox5x"></div>
+           
+           
+        </div>
+
+        <div class="footer-text">
+            <div>Copyright Flexbox</div>
+        </div>
+  
+    </footer>
+
+
+</body></html>
